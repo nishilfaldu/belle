@@ -5,12 +5,37 @@ export interface Product {
   name: string;
   price: number;
   category: string;
+  theme?: string;
   tags: string[];
   image: string;
   description: string;
   dietary: string[];
   leadTime: number;
 }
+
+
+export const CAKE_THEMES = [
+  "Anniversary cakes",
+  "All about love",
+  "1st birthday (boy)",
+  "1st birthday (girl)",
+  "2 tier cakes for baby boy",
+  "2 tier cakes for baby girl",
+  "Sports theme",
+  "Bride to be",
+  "Baby shower",
+  "½ birthday cakes",
+  "2 tier engagement cakes",
+  "3 tier engagement cakes",
+  "Cakes for men",
+  "Cakes for women",
+  "Pinterest inspired cakes",
+  "Profession based cakes",
+  "Cakes for kids and teens",
+  "Tv show themed cakes"
+];
+
+// ... existing Product interface ...
 
 export interface Course {
   id: number;
@@ -38,17 +63,19 @@ export const PRODUCTS: Product[] = [
     name: "The Velvet Noir",
     price: 65,
     category: "cakes",
+    theme: "Anniversary cakes",
     tags: ["bestseller", "staple"],
     image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1000&auto=format&fit=crop",
     description: "70% Dark Belgian Chocolate ganache with a salted caramel core.",
     dietary: [],
-    leadTime: 6
+    leadTime: 6 
   },
   {
     id: 2,
     name: "Sicilian Lemon Cloud",
     price: 55,
     category: "cakes",
+    theme: "Cakes for women",
     tags: ["seasonal", "trending"],
     image: "https://images.unsplash.com/photo-1519340333755-56e9c1d04579?q=80&w=1000&auto=format&fit=crop",
     description: "Zesty lemon sponge with elderflower buttercream and meringue kisses.",
@@ -60,8 +87,9 @@ export const PRODUCTS: Product[] = [
     name: "Matcha & Raspberry Opera",
     price: 70,
     category: "cakes",
+    theme: "Pinterest inspired cakes",
     tags: ["luxury"],
-    image: "https://images.unsplash.com/photo-1519340333755-56e9c1d04579?q=80&w=1000&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1562772379-08246fa4db7e?q=80&w=1000&auto=format&fit=crop",
     description: "Layers of almond sponge, matcha buttercream, and raspberry gelee.",
     dietary: [],
     leadTime: 48
@@ -71,6 +99,7 @@ export const PRODUCTS: Product[] = [
     name: "Keto Hazelnut Rocher",
     price: 12,
     category: "healthy",
+    theme: "Cakes for men",
     tags: ["keto", "sugar-free"],
     image: "https://images.unsplash.com/photo-1599785209796-786432b228bc?q=80&w=1000&auto=format&fit=crop",
     description: "Sugar-free hazelnut mousse cups. 2g Net Carbs.",
@@ -82,6 +111,7 @@ export const PRODUCTS: Product[] = [
     name: "Vegan Berry Tart",
     price: 45,
     category: "healthy",
+    theme: "Cakes for women",
     tags: ["vegan"],
     image: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=1000&auto=format&fit=crop",
     description: "Almond flour crust filled with coconut cream and fresh seasonal berries.",
@@ -93,11 +123,36 @@ export const PRODUCTS: Product[] = [
     name: "Signature Macaron Box",
     price: 35,
     category: "desserts",
+    theme: "All about love",
     tags: ["gifting"],
     image: "https://images.unsplash.com/photo-1569864358642-9d1684040f43?q=80&w=1000&auto=format&fit=crop",
     description: "Assortment of 12 hand-painted macarons.",
     dietary: ["gluten-free"],
     leadTime: 24
+  },
+  {
+    id: 7,
+    name: "Blue Teddy Tier",
+    price: 120,
+    category: "cakes",
+    theme: "1st birthday (boy)",
+    tags: ["custom"],
+    image: "https://images.unsplash.com/photo-1535254973040-607b474cb50d?q=80&w=1000&auto=format&fit=crop",
+    description: "Two-tier vanilla bean cake with fondant teddy bear topper.",
+    dietary: [],
+    leadTime: 48
+  },
+  {
+    id: 8,
+    name: "Elegant Floral Ring",
+    price: 150,
+    category: "cakes",
+    theme: "2 tier engagement cakes",
+    tags: ["custom"],
+    image: "https://images.unsplash.com/photo-1535141192574-5d4897c12636?q=80&w=1000&auto=format&fit=crop",
+    description: "Semi-naked frosting with fresh organic edible flowers.",
+    dietary: [],
+    leadTime: 72
   }
 ];
 
