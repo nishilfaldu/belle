@@ -32,7 +32,7 @@ room to grow into the teaching side when she is ready.
 |---|---|
 | **Home** | A full-bleed hero, a rotating order/announcement ticker, and the week's featured cakes. |
 | **Shop** | The full catalog — cakes, healthy options, and desserts — with themes, dietary tags, prices, and lead times. |
-| **The Academy** | Baking courses, free demo sessions and paid masterclasses, each with a player, ingredients, and step-by-step method. The foundation for her future courses. |
+| **The Academy** | A sketch of the teaching side — baking courses, free demos and paid masterclasses with a player, ingredients, and method. Roughed out, not built. |
 | **Recipes** | Short, approachable recipes to bring people back between orders. |
 | **Corporate** | A path for bulk and corporate orders. |
 | **Cart** | A running cart for placing orders across the shop. |
@@ -70,9 +70,16 @@ npm run check    # Biome lint + format
 
 ## Status
 
-In progress. The storefront and the Academy are built out and styled; the catalog,
-courses, and recipes currently run on sample content while the Convex-backed data
-is wired in. The next milestones are moving products into Convex and standing up
-the course-publishing flow so she can teach directly from her own site.
+Early and unfinished — honestly, more of a head start than a working site. The
+storefront layout is in place, but everything on it is placeholder: the cakes are
+stock photos, the catalog and recipes run on mock data, and the Academy is only
+roughed out, not actually built. None of it is wired to Convex yet, and nothing is
+published.
+
+This is the kind of project that needs two people in the same room, and my friend
+runs a busy kitchen — we simply haven't found the time to sit down, swap in her
+real cakes, prices, and story, and take it live. It's paused, not abandoned. When
+we get a window, the path forward is real content in, Convex wired up, the Academy
+built for real, and then ship it.
 
 Built with [Claude Code](https://claude.com/claude-code).
